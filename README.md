@@ -1,16 +1,15 @@
 # RepairZwiftFIT
-xxx
+Repair Zwift FIT file by merging with QZ Fitness FIT file to add Zwift location data
 
-Merge Zwift FIT file with QZ Fitness FIT file to add Zwift location data to QZ Fitness
+RepairZwiftFIT is currently a Windows 10/11 command-line or batch solution to resolve a problem with Zwift FIT files. That is, Zwift calculates elevation/altitude incorrectly for treadmill incline. Specifically, negative incline is assigned 0 elevation. QZ FIT files, when synced to Zwift activities, don’t contain Zwift's location data (virtual lat/long), but they do contain correct calculated elevation. Zmerge will merge Zwift FIT location data (and other important data fields) with QZ FIT data including calculated elevation.
 
-Zmerge is used to resolve a problem - Zwift FIT files calculate elevation/altitude incorrectly for treadmill incline. Specifically, negative incline is assigned 0 elevation. QZ FIT files, when synced to Zwift activities, don’t contain Zwift's location data (virtual lat/long), but they do contain correct calculated elevation. Zmerge will merge Zwift FIT location data (and other important data fields) with QZ FIT data including calculated elevation.
-
-Zmerge is a Java command-line app.
-
-Requires Garmin FIT SDK.
 Requires Oracle Java™ Runtime Environment 8 - 1.8.0 or higher.
-Can be run as API or standalone from command line.
+Requires QZ Fitness app (available on iOS, Android, Windows)
+RepairZwiftFIT can be run from Windows command-line or as a batch file.
 
-Call "java -jar qz-zwift-merge.jar --help" for command line usage.
+Background:
+- Zwift records a FIT file for each treadmill activity (manual run, workout, event, or meetup). Note that these FIT files contain incorrect elevation data for treadmill incline as described above.
+- QZ Fitness records a FIT file whenever a workout is manually started and stopped. It's FIT files contain accurate workout metrics collected from the connected treadmill including correct elevation calculated from treadmill incline.
 
-Javadoc in ./dist folder
+
+

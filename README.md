@@ -1,5 +1,5 @@
 # RepairZwiftFIT
-Repair Zwift Run FIT file by merging with QZ Fitness FIT file to add Zwift location data
+Repair Zwift Run FIT files by merging with QZ Fitness FIT file to add Zwift location data
 
 RepairZwiftFIT is a Windows batch solution to resolve a problem with Zwift Run FIT files. That is, Zwift calculates elevation/altitude incorrectly for treadmill incline; negative incline is assigned 0 elevation. QZ FIT files, when synced to Zwift activities, don’t contain Zwift's location data (virtual lat/long), but they do contain correct calculated elevation. RepairZwiftFIT will merge Zwift FIT location data (and other important data fields) with QZ FIT data including calculated elevation.
 

@@ -15,8 +15,8 @@ Usage:
 - In the RepairZwiftFIT installation folder, edit the provided batch files (merge-by-day.bat and merge-all-dates.bat) to set the FIT file location folders for both Zwift and QZ Fitness. By default, Zwift Windows stores its FIT files in %USERPROFILE%\Documents\Zwift\Activities. QZ Fitness for Windows is flexible and can be installed in any location.
 - Launch QZ with settings to connect to your treadmill. Ensure QZ is not in paused state.
 - Launch Zwift in Run mode and ensure Speed is paired to QZ.
-- Complete one or more Zwift activities (manual run, workout, event, or meetup).
+- Complete one or more Zwift activities (manual run, workout, event, or meetup) using manual or auto incline.
 - When done, exit Zwift and QZ.
-- In the RepairZwiftFIT installation folder, run the appropriate batch file to locate and merge Zwift and QZ Fitness files. The resulting FIT file are exported to the /merged folder within the installation folder.
+- In the RepairZwiftFIT installation folder, run the appropriate batch file to locate and merge Zwift and QZ Fitness files. The resulting FIT files are exported to the /merged folder within the installation folder.
 - Merge-by-day.bat - use to merge FIT files by a specific date (hit enter to accept todays date).
 - Merge-all-dates.bat - use to merge all FIT files by date. Only dates common with the Zwift and QZ files will be used.

@@ -19,4 +19,4 @@ Usage:
 - When done, exit Zwift and QZ.
 - In the RepairZwiftFIT installation folder, run the appropriate batch file to locate and merge Zwift and QZ Fitness files. The resulting FIT files are exported to the /merged folder within the installation folder.
 - Merge-by-day.bat - use to merge FIT files by a specific date (hit enter to accept todays date).
-- Merge-all-dates.bat - use to merge all FIT files by date. Only dates common with the Zwift and QZ files will be used.
+- Merge-all-dates.bat - use to merge all FIT files by date. Only dates common with Zwift and QZ files will be used.
